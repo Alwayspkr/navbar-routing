@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navigation Bar -->
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <!-- Logo Section -->
+        <div class="logo"><a routerLink="/home">TechMasters</a></div>
+        <!-- Links Section -->
+        <ul class="links">
+          <!-- Home Link -->
+          <li><a routerLink="/home">Home</a></li>
+          <!-- Product Dropdown -->
+          <li>
+            <a href="#" class="desktop-link">Product</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Product</label>
+            <ul>
+              <li><a routerLink="/product/item1">Dropdown Item 1</a></li>
+              <li><a routerLink="/product/item2">Dropdown Item 2</a></li>
+              <li><a routerLink="/product/item3">Dropdown Item 3</a></li>
+              <li><a routerLink="/product/item4">Dropdown Item 4</a></li>
+            </ul>
+          </li>
+          <!--  Dropdown -->
+          <li>
+            <a  class="desktop-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a routerLink="/services/item1">Dropdown Item 1</a></li>
+              <li><a routerLink="/services/item2">Dropdown Item 2</a></li>
+              <li><a routerLink="/services/item3">Dropdown Item 3</a></li>
+            </ul>
+          </li>
+          <!-- Other Links -->
+          <li><a routerLink="/contact-us">Contact Us</a></li>
+          <li><a routerLink="/about">About</a></li>
+        </ul>
+      </div>
+      <!-- Search Icon -->
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <!-- Search Box -->
+      <form action="#" class="search-box">
+        <input type="text" placeholder="What Are You Looking For..?" required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- Dummy Text for Display -->
+  <div class="sample-text">
+    <div class="sample-text">
+      <h2>Elegant Navigation Interface</h2>
+      <h2>Crafted with HTML, CSS & Flexbox Magic</h2>
+    </div>
+
+  </div>
+</body>
+</html>
